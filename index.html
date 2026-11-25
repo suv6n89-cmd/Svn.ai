@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>Svn.AI — Personal Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand"><div class="logo">S</div><div><h1>Svn.AI</h1><p>Your Personal AI Assistant</p></div></div>
+      <span class="mode">DEMO MODE</span>
+    </header>
+    <section class="hero">
+      <div class="orb"><span>S</span></div>
+      <h2>হ্যালো! আমি Svn.AI</h2>
+      <p>বাংলায় লিখে বা মাইক্রোফোনে কথা বলে শুরু করো।</p>
+    </section>
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="bubble bot">আসসালামু আলাইকুম! আমি তোমার Svn.AI। এখন আমি প্রাথমিক Demo Mode-এ আছি। কীভাবে সাহায্য করতে পারি?</div>
+    </section>
+    <div class="quick">
+      <button data-prompt="আজকের জন্য একটি কাজের তালিকা তৈরি করো">আজকের কাজ</button>
+      <button data-prompt="আমার সম্পর্কে কী মনে রাখতে পারো?">মেমোরি</button>
+      <button data-prompt="ইংরেজি শেখার সহজ পরিকল্পনা দাও">ইংরেজি শেখা</button>
+    </div>
+    <form id="composer" class="composer">
+      <button type="button" id="mic" class="iconbtn" title="কথা বলুন" aria-label="কথা বলুন">🎙️</button>
+      <input id="message" autocomplete="off" placeholder="Svn.AI-কে কিছু জিজ্ঞেস করো..." />
+      <button class="send" type="submit">পাঠাও</button>
+    </form>
+    <footer><span id="status">Demo mode · তোমার তথ্য এই ব্রাউজারেই থাকে</span><button id="clear" class="clear">চ্যাট মুছুন</button></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
